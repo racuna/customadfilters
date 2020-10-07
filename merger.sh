@@ -2,7 +2,7 @@
 
 # This script just merge everything I need from GBA, plus my own filters and merge them eliminating duplicates
 
-# v.0.1 initial release
+# v.0.2 added Spotify url filters
 
 git pull
 
@@ -17,6 +17,7 @@ cd /tmp/merger
 wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt
 wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-YouTube-AdBlock.txt
 wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Xiaomi-Extension.txt
+wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt
 wget https://raw.githubusercontent.com/racuna/customadfilters/master/customAdFilters.txt
 cat GoodbyeAds* customAdFilters.txt |sort|uniq > $THISDIR/GBAplusMine.txt
 
