@@ -4,10 +4,12 @@
 
 # v.0.1 initial release
 
+git pull
+
 rm GBAplusMine.txt
 THISDIR=`pwd`
 
-git pull
+
 
 mkdir /tmp/merger
 cd /tmp/merger
