@@ -12,4 +12,8 @@ https://raw.githubusercontent.com/racuna/customadfilters/master/customAdFilters.
 ## BETA: GBA and mine Merged
 
 using the script merger.sh this file is generated daily:
+
 https://raw.githubusercontent.com/racuna/customadfilters/master/GBAplusMine.txt
+
+If you want to say thanks or show support, go to: https://github.com/jerryn70/GoodbyeAds
+they do the real work here.
