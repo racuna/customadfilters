@@ -18,3 +18,12 @@ cat GoodbyeAds* customAdFilters.txt |sort|uniq > $THISDIR/GBAplusMine.txt
 
 rm -rf /tmp/merger
 
+cd $THISDIR
+
+git add GBAplusMine.txt
+
+git commit -m "Actualizacion de GBAplusMine.txt dia: `date`"
+
+git push -u origin master
+
+
