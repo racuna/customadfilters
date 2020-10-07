@@ -7,6 +7,8 @@
 rm GBAplusMine.txt
 THISDIR=`pwd`
 
+git pull
+
 mkdir /tmp/merger
 cd /tmp/merger
 
