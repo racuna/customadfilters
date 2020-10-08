@@ -11,7 +11,7 @@ https://raw.githubusercontent.com/racuna/customadfilters/master/customAdFilters.
 
 ## BETA: GBA and mine Merged
 
-GBA Already have Steven Black, Adaway, Dan Pollock, MalwareDomain List, Peter Lowe and even more. So you can disable every other list and add this instead:
+GBA Already have Steven Black, Adaway, Dan Pollock, MalwareDomain List, Peter Lowe and even more. So you can disable every other list on DNS66 and add this instead:
 
 Im merging main GBA hosts with Xiaomi, Youtube, Spotify and my own list, then I clean the duplicates to generate this list.
 
