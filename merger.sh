@@ -19,7 +19,7 @@ wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/Good
 wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Xiaomi-Extension.txt
 wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt
 wget https://raw.githubusercontent.com/racuna/customadfilters/master/customAdFilters.txt
-cat GoodbyeAds* customAdFilters.txt |sort|uniq > $THISDIR/GBAplusMine.txt
+cat GoodbyeAds* customAdFilters.txt |grep -v ^#|sort|uniq > $THISDIR/GBAplusMine.txt
 
 rm -rf /tmp/merger
 
