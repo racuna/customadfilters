@@ -1,7 +1,12 @@
+# Ads
 0.0.0.0 ad.doubleclick.net
 0.0.0.0 tpc.googlesyndication.com
 0.0.0.0 s0.2mdn.net
 0.0.0.0 securepubads.g.doubleclick.net
+
+# Social networks
+## if you still using Facebook, this could break functionality, I dunno. tho.
+0.0.0.0 star.c10r.facebook.com
 
 # AutoPlay videos
 0.0.0.0 www.wired.com/video/watch
