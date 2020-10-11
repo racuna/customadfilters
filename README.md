@@ -3,13 +3,20 @@ This are just some host filter to block some ads and other web annoyances that G
 
 How to use it:
 
+## Blockada
+
+Blacklists -> plus button -> add the url, name it (e.g RacunaCustomFilter) -> refresh filters
+
 ## DNS66
 
 Hosts -> Plus button -> add the url, name it (e.g customFilter) -> Refresh and Start
 
 ## PersonalDNSFilter
 
+(my current personal favorite)
+
 Advanced Settings -> Configure filter update -> add the url, name it (e.g customFilter) -> enable it
+
 
 ## The URL
 
