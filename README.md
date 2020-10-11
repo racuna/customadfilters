@@ -5,7 +5,13 @@ How to use it:
 
 ## DNS66
 
-Hosts -> Plus button -> add this url -> Refresh and Start
+Hosts -> Plus button -> add the url, name it (e.g customFilter) -> Refresh and Start
+
+## PersonalDNSFilter
+
+Advanced Settings -> Configure filter update -> add the url, name it (e.g customFilter) -> enable it
+
+## The URL
 
 https://raw.githubusercontent.com/racuna/customadfilters/master/customAdFilters.txt
 
