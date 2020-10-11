@@ -3,7 +3,7 @@ This are just some host filter to block some ads and other web annoyances that G
 
 How to use it:
 
-## Blockada
+## Blokada
 
 Blacklists -> plus button -> add the url, name it (e.g RacunaCustomFilter) -> refresh filters
 
