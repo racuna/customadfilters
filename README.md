@@ -1,4 +1,4 @@
-# Custo Ad Filters
+# racuna's Custom Ad Filters
 This are just some host filter to block some ads and other web annoyances that GBA (Good Bye Ads) doesn't already block.
 
 How to use it:
