@@ -35,6 +35,7 @@ https://raw.githubusercontent.com/racuna/customadfilters/master/GBAplusMine.txt
 If you want to say thanks or show support, go to: https://github.com/jerryn70/GoodbyeAds
 they do the real work here.
 
-### TODO:
+### TO-DO:
 
 - [x] Clean headers and commented lines to make it lighter 
+- [x] Unfuck a problem with apps using Google Maps internally. Fixed implementing a whitelist.
