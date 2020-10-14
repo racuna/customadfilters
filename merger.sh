@@ -21,7 +21,7 @@ wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/Good
 wget https://raw.githubusercontent.com/racuna/customadfilters/master/customAdFilters.txt
 wget https://raw.githubusercontent.com/racuna/customadfilters/master/whitelist.txt
 
-cat GoodbyeAds* customAdFilters.txt |grep -v `cat whitelist.txt`|grep -v ^#|sort|uniq> $THISDIR/GBAplusMine.txt
+cat GoodbyeAds* customAdFilters.txt |grep -v -f whitelist.txt|grep -v ^#|sort|uniq> $THISDIR/GBAplusMine.txt
 
 rm -rf /tmp/merger
 
