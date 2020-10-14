@@ -2,7 +2,7 @@
 
 # This script just merge everything I need from GBA, plus my own filters and merge them eliminating duplicates
 
-# v.0.2 added Spotify url filters
+# v.1.0 added whitelist support
 
 git pull
 
