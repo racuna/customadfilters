@@ -10,3 +10,6 @@
 
 # AutoPlay videos
 0.0.0.0 www.wired.com/video/watch
+
+# VideoAdvertising
+0.0.0.0 cdn.jwplayer.com
