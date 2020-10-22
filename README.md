@@ -39,4 +39,4 @@ they do the real work here.
 
 - [x] Clean headers and commented lines to make it lighter 
 - [x] Unfuck a problem with apps using Google Maps internally. Fixed implementing a whitelist.
-- [ ] Whitelist can't have blank lines
+- [ ] Whitelist can't have blank lines (currently on test)
