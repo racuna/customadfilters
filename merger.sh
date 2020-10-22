@@ -33,7 +33,7 @@ wget https://raw.githubusercontent.com/racuna/customadfilters/master/whitelist.t
 sed -r '/^\s*$/d' whitelist.txt > wl2.txt
 
 # Generate master filter list
-cat GoodbyeAds* customAdFilters.txt |grep -v -f whitelist.txt|grep -v ^#|sort|uniq> $THISDIR/GBAplusMine.txt
+cat GoodbyeAds* customAdFilters.txt |grep -v -f wl2.txt|grep -v ^#|sort|uniq> $THISDIR/GBAplusMine.txt
 
 # delete temporary workspace
 rm -rf /tmp/merger
