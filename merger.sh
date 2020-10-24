@@ -25,6 +25,7 @@ wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/Good
 wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Xiaomi-Extension.txt
 wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt
 wget https://raw.githubusercontent.com/racuna/customadfilters/master/customAdFilters.txt
+wget https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt
 
 #download exceptions
 wget https://raw.githubusercontent.com/racuna/customadfilters/master/whitelist.txt
@@ -33,7 +34,7 @@ wget https://raw.githubusercontent.com/racuna/customadfilters/master/whitelist.t
 sed -r '/^\s*$/d' whitelist.txt > wl2.txt
 
 # Generate master filter list
-cat GoodbyeAds* customAdFilters.txt |grep -v -f wl2.txt|grep -v ^#|sort|uniq> $THISDIR/GBAplusMine.txt
+cat GoodbyeAds* CoinMiner.txt customAdFilters.txt |grep -v -f wl2.txt|grep -v ^#|sort|uniq> $THISDIR/GBAplusMine.txt
 
 # delete temporary workspace
 rm -rf /tmp/merger
