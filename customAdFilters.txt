@@ -16,3 +16,6 @@
 
 # Ars Technica Autoplay Videos
 0.0.0.0 player.cnevids.com
+
+# Uber push ads
+0.0.0.0 pusher.uber.com
