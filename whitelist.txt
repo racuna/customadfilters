@@ -7,3 +7,6 @@ e9631.j.akamaiedge.net
 # Fox News needs this shit or wont load
 e4900.dsca.akamaiedge.net
 0.0.0.0 akamaiedge.net
+
+# Load Twitter images (test)
+api2.branch.io
