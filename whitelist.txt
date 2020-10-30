@@ -10,3 +10,4 @@ e4900.dsca.akamaiedge.net
 
 # Load Twitter images (test)
 api2.branch.io
+0.0.0.0 branch.io
