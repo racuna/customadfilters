@@ -11,8 +11,9 @@
 # AutoPlay videos
 0.0.0.0 www.wired.com/video/watch
 
-# VideoAdvertising
+# JWPlayer VideoAdvertising
 0.0.0.0 cdn.jwplayer.com
+0.0.0.0 content.jwplatform.com
 
 # Ars Technica Autoplay Videos
 0.0.0.0 player.cnevids.com
