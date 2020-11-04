@@ -5,17 +5,17 @@ How to use it:
 
 ## Blokada
 
-Blacklists -> plus button -> add the url, name it (e.g RacunaCustomFilter) -> refresh filters
+Blacklists -> plus button -> add the url, name it (e.g RacunasCustomFilter) -> refresh filters
 
 ## DNS66
 
-Hosts -> Plus button -> add the url, name it (e.g customFilter) -> Refresh and Start
+Hosts -> Plus button -> add the url, name it (e.g RacunasCustomFilter) -> Refresh and Start
 
 ## PersonalDNSFilter
 
 (my current personal favorite)
 
-Advanced Settings -> Configure filter update -> add the url, name it (e.g customFilter) -> enable it
+Advanced Settings -> Configure filter update -> add the url, name it (e.g RacunasCustomFilter) -> enable it
 
 
 ## The URL
@@ -39,4 +39,4 @@ they do the real work here.
 
 - [x] Clean headers and commented lines to make it lighter 
 - [x] Unfuck a problem with apps using Google Maps internally. Fixed implementing a whitelist.
-- [ ] Whitelist can't have blank lines (currently on test)
+- [x] Whitelist can't have blank lines
