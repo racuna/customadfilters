@@ -7,6 +7,7 @@
 # Social networks
 ## if you still using Facebook, this could break functionality, I dunno. tho.
 0.0.0.0 star.c10r.facebook.com
+0.0.0.0 ads.tiktok.com
 
 # AutoPlay videos
 0.0.0.0 www.wired.com/video/watch
