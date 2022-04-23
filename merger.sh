@@ -16,8 +16,8 @@ THISDIR=`pwd`
 
 
 #create temorary workspace
-mkdir /tmp/merger
-cd /tmp/merger
+mkdir ~/tmp/merger
+cd ~/tmp/merger
 
 #download filters
 wget https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt
@@ -38,7 +38,7 @@ sed -r '/^\s*$/d' whitelist.txt > wl2.txt
 cat GoodbyeAds* CoinMiner.txt customAdFilters.txt hosts.txt|grep -v -f wl2.txt|grep -v ^#|sort|uniq> $THISDIR/GBAplusMine.txt
 
 # delete temporary workspace
-rm -rf /tmp/merger
+rm -rf ~/tmp/merger
 
 # comeback to previous directory
 cd $THISDIR

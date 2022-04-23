@@ -1,6 +1,10 @@
 # Break apps that calls Google Maps internally
 clients.l.google.com
 
+# static content from google
+gstaticadssl.l.google.com
+0.0.0.0 gstaticadssl.l.google.com
+
 # The Washington Post needs this shit or wont load
 e9631.j.akamaiedge.net
 
