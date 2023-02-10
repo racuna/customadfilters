@@ -17,4 +17,7 @@ api2.branch.io
 0.0.0.0 branch.io
 
 #Linux Pizza cdn
-cdn.social.linux.pizza
+0.0.0.0 cdn.social.linux.pizza
+
+# GlobalHive ZEC redirection
+0.0.0.0 briskpelican.io
