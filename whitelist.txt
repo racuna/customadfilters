@@ -19,5 +19,5 @@ api2.branch.io
 #Linux Pizza cdn
 0.0.0.0 cdn.social.linux.pizza
 
-# GlobalHive ZEC redirection
-0.0.0.0 briskpelican.io
+# Shoud I answer
+0.0.0.0 shouldianswerapp.b-cdn.net
