@@ -21,3 +21,51 @@
 
 # Uber push ads
 0.0.0.0 pusher.uber.com
+
+#bitcoinminer
+0.0.0.0 com.adjust.android.sdk.
+0.0.0.0 com.adjust.sdk.
+0.0.0.0 com.amazon.device.ads
+0.0.0.0 com.applovin
+0.0.0.0 com.bytedance
+0.0.0.0 com.bytedance.iioc.adje.protection
+0.0.0.0 com.bytedance.iioc.adje.pangle.global
+0.0.0.0 com.bytedance.iioc.adje.pangle
+0.0.0.0 com.crashlytics.
+0.0.0.0 com.cyber.
+0.0.0.0 io.fabric.sdk.android
+0.0.0.0 io.fabric.
+0.0.0.0 com.facebook.ads
+0.0.0.0 com.facebook.appevents
+0.0.0.0 com.facebook.CampaignTrackingReceiver
+0.0.0.0 com.facebook.login
+0.0.0.0 com.facebook.marketing.
+0.0.0.0 com.facebook.share
+0.0.0.0 com.fyber.
+0.0.0.0 com.google.ads.
+0.0.0.0 com.google.android.gms.ads.AdMob
+0.0.0.0 com.google.android.gms.ads.AdActivity
+0.0.0.0 com.google.android.gms.ads.AdView
+0.0.0.0 com.google.android.gms.measurement.
+0.0.0.0 com.google.crashlytics
+0.0.0.0 com.google.firebase.analytics.
+0.0.0.0 com.google.firebase.crash.
+0.0.0.0 com.google.firebase.crashlytics
+0.0.0.0 com.google.firebase.firebase_analytics
+0.0.0.0 com.iab.omid.library
+0.0.0.0 com.ironsource.
+0.0.0.0 com.mintegral.
+0.0.0.0 com.mintergal.mbridge.msdk
+0.0.0.0 com.mbridge.msdk.
+0.0.0.0 com.pangle.global
+0.0.0.0 com.pgl
+0.0.0.0 com.prime31.IAB.
+0.0.0.0 com.prime31.util.labHelperlmpl
+0.0.0.0 com.unity3d.ads
+0.0.0.0 com.unity3d.services
+0.0.0.0 io.adjoe.protection.
+0.0.0.0 io.adjoe.sdk.
+0.0.0.0 io.fabric.
+0.0.0.0 io.invertase.firebase.crashlytics.
+0.0.0.0 io.opencensus
+0.0.0.0 io.opentelemetry
