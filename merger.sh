@@ -49,6 +49,11 @@ git add GBAplusMine.txt
 # Comment of update
 git commit -m "Actualizacion de GBAplusMine.txt dia: `date`"
 
+# Generate Adblock syntax
+sed 's/^0\.0\.0\.0 /||/; s/$/.^/' GBAplusMine.txt > adblock_rules.txt
+git add adblock_rules.txt
+git commit -m "Actualizacion de adblock_rules.txt dia: `date`"
+
 # Update online repo
 git push -u origin master
 
