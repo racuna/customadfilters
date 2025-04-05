@@ -69,4 +69,12 @@
 0.0.0.0 io.invertase.firebase.crashlytics.
 0.0.0.0 io.opencensus
 0.0.0.0 io.opentelemetry
+
+#Pron
 0.0.0.0 www.xcams.cam
+0.0.0.0 go.xlviirdr.com
+0.0.0.0 dreamlikefostergala.com
+0.0.0.0 2-05.com
+0.0.0.0 mytdsnet.com
+0.0.0.0 dheqzygafg.com
+0.0.0.0 go.reebr.com
