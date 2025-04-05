@@ -52,7 +52,7 @@ git commit -m "Actualizacion de GBAplusMine.txt dia: `date`"
 # Generate Adblock syntax
 #sed 's/^0\.0\.0\.0 /||/; s/$/.^/' GBAplusMine.txt > adblock_rules.txt
 grep "0.0.0.0" GBAplusMine.txt | \
-grep -v "::1\|127.0.0.1\|255.255.255.255\|fe80::\|ff00::\|ff02::" | \
+grep -v "::1\|127.0.0.1\|255.255.255.255\|fe80::\|ff00::\|ff02::\|^0.0.0.0 0.0.0.0$" | \
 sed 's/^0\.0\.0\.0 /||/; s/$/.^/' > adblock_rules.txt
 git add adblock_rules.txt
 git commit -m "Actualizacion de adblock_rules.txt dia: `date`"
