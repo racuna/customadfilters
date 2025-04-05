@@ -69,3 +69,4 @@
 0.0.0.0 io.invertase.firebase.crashlytics.
 0.0.0.0 io.opencensus
 0.0.0.0 io.opentelemetry
+0.0.0.0 www.xcams.cam
