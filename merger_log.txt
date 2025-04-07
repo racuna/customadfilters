@@ -1,14 +1,12 @@
-*** Script execution started: dom 06 abr 2025 20:24:04 -04 ***
-2025-04-06 20:24:04 - Pulling latest changes from git repository
-2025-04-06 20:24:07 - Removing old filter list file
-2025-04-06 20:24:07 - Current directory: /home/racuna/Downloads/customadfilters
-2025-04-06 20:24:07 - Setting up temporary workspace at /home/racuna/tmp/merger
-2025-04-06 20:24:18 - Cleaned up temporary workspace
-2025-04-06 20:24:18 - Adding GBAplusMine.txt to git repo
-2025-04-06 20:24:18 - Committing changes: Actualizacion de GBAplusMine.txt dia: dom 06 abr 2025 20:24:18 -04
-2025-04-06 20:24:18 - Generating AdBlock rules format
-2025-04-06 20:24:18 - File adblock_rules.txt contains 450214 lines
-2025-04-06 20:24:18 - Adding adblock_rules.txt to git repo
-2025-04-06 20:24:18 - Añadiendo archivo de log al repositorio
-2025-04-06 20:24:19 - Pushing changes to remote repository
-2025-04-06 20:24:21 - Script execution completed
+*** Script execution started: dom 06 abr 2025 22:44:55 -04 ***
+2025-04-06 22:44:55 - Pulling latest changes from git repository
+2025-04-06 22:44:57 - Removing old filter list file
+2025-04-06 22:44:57 - Current directory: /home/racuna/Downloads/customadfilters
+2025-04-06 22:44:57 - Setting up temporary workspace at /home/racuna/tmp/merger
+2025-04-06 22:45:11 - Cleaned up temporary workspace
+2025-04-06 22:45:11 - Adding GBAplusMine.txt to git repo
+2025-04-06 22:45:11 - Committing changes: Actualizacion de GBAplusMine.txt dia: dom 06 abr 2025 22:45:11 -04
+2025-04-06 22:45:12 - Generating AdBlock rules format
+2025-04-06 22:45:12 - File adblock_rules.txt contains 450214 lines
+2025-04-06 22:45:12 - Adding adblock_rules.txt to git repo
+2025-04-06 22:45:12 - Añadiendo archivo de log al repositorio
