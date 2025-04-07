@@ -128,6 +128,11 @@ log_message "Adding adblock_rules.txt to git repo"
 git add adblock_rules.txt
 git commit -m "Actualizacion de adblock_rules.txt dia: $(date)"
 
+# Añadir el archivo de log al repositorio
+log_message "Añadiendo archivo de log al repositorio"
+git add "$LOG_FILE"
+git commit -m "Actualizacion de log de ejecución dia: $(date)"
+
 # Push changes
 log_message "Pushing changes to remote repository"
 git push -u origin master
