@@ -1,34 +1,34 @@
-*** Script execution started: mar 08 abr 2025 07:43:48 -04 ***
-2025-04-08 07:43:48 - Pulling latest changes from git repository
-2025-04-08 07:43:50 - Removing old filter list file
-2025-04-08 07:43:50 - Current directory: /home/racuna/Downloads/customadfilters
-2025-04-08 07:43:50 - Setting up temporary workspace at /home/racuna/tmp/merger
-2025-04-08 07:43:50 - Downloading filter lists...
-2025-04-08 07:43:50 - Downloading GoodbyeAds.txt
-2025-04-08 07:43:55 - GoodbyeAds.txt downloaded, contains 277873 lines
-2025-04-08 07:43:55 - Downloading GoodbyeAds-YouTube-AdBlock.txt
-2025-04-08 07:43:57 - GoodbyeAds-YouTube-AdBlock.txt downloaded, contains 97668 lines
-2025-04-08 07:43:57 - Downloading GoodbyeAds-Xiaomi-Extension.txt
-2025-04-08 07:43:58 - GoodbyeAds-Xiaomi-Extension.txt downloaded, contains 301 lines
-2025-04-08 07:43:58 - Downloading GoodbyeAds-Spotify-AdBlock.txt
-2025-04-08 07:43:58 - GoodbyeAds-Spotify-AdBlock.txt downloaded, contains 3803 lines
-2025-04-08 07:43:58 - Downloading customAdFilters.txt
-2025-04-08 07:43:58 - customAdFilters.txt downloaded, contains 80 lines
-2025-04-08 07:43:58 - Downloading CoinMiner.txt
-2025-04-08 07:43:59 - CoinMiner.txt downloaded, contains 5948 lines
-2025-04-08 07:43:59 - Downloading hosts.txt
-2025-04-08 07:44:01 - hosts.txt downloaded, contains 104089 lines
-2025-04-08 07:44:01 - Downloading whitelist.txt
-2025-04-08 07:44:01 - whitelist.txt downloaded, contains 23 lines
-2025-04-08 07:44:01 - Processing whitelist
-2025-04-08 07:44:01 - File wl2.txt contains 17 lines
-2025-04-08 07:44:01 - Generating master filter list
-2025-04-08 07:44:04 - File master_temp.txt contains 450660 lines
-2025-04-08 07:44:04 - Created GBAplusMine.txt in /home/racuna/Downloads/customadfilters
-2025-04-08 07:44:04 - Cleaned up temporary workspace
-2025-04-08 07:44:04 - Adding GBAplusMine.txt to git repo
-2025-04-08 07:44:04 - Committing changes: Actualizacion de GBAplusMine.txt dia: mar 08 abr 2025 07:44:04 -04
-2025-04-08 07:44:05 - Generating AdBlock rules format
-2025-04-08 07:44:05 - File adblock_rules.txt contains 450640 lines
-2025-04-08 07:44:05 - Adding adblock_rules.txt to git repo
-2025-04-08 07:44:06 - Añadiendo archivo de log al repositorio
+*** Script execution started: mar 08 abr 2025 07:44:18 -04 ***
+2025-04-08 07:44:18 - Pulling latest changes from git repository
+2025-04-08 07:44:20 - Removing old filter list file
+2025-04-08 07:44:20 - Current directory: /home/racuna/Downloads/customadfilters
+2025-04-08 07:44:20 - Setting up temporary workspace at /home/racuna/tmp/merger
+2025-04-08 07:44:20 - Downloading filter lists...
+2025-04-08 07:44:20 - Downloading GoodbyeAds.txt
+2025-04-08 07:44:24 - GoodbyeAds.txt downloaded, contains 277873 lines
+2025-04-08 07:44:24 - Downloading GoodbyeAds-YouTube-AdBlock.txt
+2025-04-08 07:44:26 - GoodbyeAds-YouTube-AdBlock.txt downloaded, contains 97668 lines
+2025-04-08 07:44:26 - Downloading GoodbyeAds-Xiaomi-Extension.txt
+2025-04-08 07:44:26 - GoodbyeAds-Xiaomi-Extension.txt downloaded, contains 301 lines
+2025-04-08 07:44:26 - Downloading GoodbyeAds-Spotify-AdBlock.txt
+2025-04-08 07:44:27 - GoodbyeAds-Spotify-AdBlock.txt downloaded, contains 3803 lines
+2025-04-08 07:44:27 - Downloading customAdFilters.txt
+2025-04-08 07:44:27 - customAdFilters.txt downloaded, contains 80 lines
+2025-04-08 07:44:27 - Downloading CoinMiner.txt
+2025-04-08 07:44:27 - CoinMiner.txt downloaded, contains 5948 lines
+2025-04-08 07:44:27 - Downloading hosts.txt
+2025-04-08 07:44:29 - hosts.txt downloaded, contains 104089 lines
+2025-04-08 07:44:29 - Downloading whitelist.txt
+2025-04-08 07:44:29 - whitelist.txt downloaded, contains 23 lines
+2025-04-08 07:44:29 - Processing whitelist
+2025-04-08 07:44:29 - File wl2.txt contains 17 lines
+2025-04-08 07:44:29 - Generating master filter list
+2025-04-08 07:44:31 - File master_temp.txt contains 450660 lines
+2025-04-08 07:44:31 - Created GBAplusMine.txt in /home/racuna/Downloads/customadfilters
+2025-04-08 07:44:31 - Cleaned up temporary workspace
+2025-04-08 07:44:31 - Adding GBAplusMine.txt to git repo
+2025-04-08 07:44:31 - Committing changes: Actualizacion de GBAplusMine.txt dia: mar 08 abr 2025 07:44:31 -04
+2025-04-08 07:44:31 - Generating AdBlock rules format
+2025-04-08 07:44:32 - File adblock_rules.txt contains 450640 lines
+2025-04-08 07:44:32 - Adding adblock_rules.txt to git repo
+2025-04-08 07:44:32 - Añadiendo archivo de log al repositorio
