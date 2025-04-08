@@ -6,6 +6,7 @@
 # v.2 Claude fixes
 # v.3 Rutas absolutas y mejoras
 # v.4 Ruta base como parámetro
+# v.4.1 no más log en el repo
 
 # Obtener la ruta base como parámetro, si se proporciona
 if [ -n "$1" ]; then
@@ -145,14 +146,12 @@ git add adblock_rules.txt
 git commit -m "Actualizacion de adblock_rules.txt dia: $(date)"
 
 # Añadir el archivo de log al repositorio
-log_message "Añadiendo archivo de log al repositorio"
-git add "$LOG_FILE"
-git commit -m "Actualizacion de log de ejecución dia: $(date)"
+# log_message "Añadiendo archivo de log al repositorio"
+# git add "$LOG_FILE"
+# git commit -m "Actualizacion de log de ejecución dia: $(date)"
 
 # Push changes
-#log_message "Pushing changes to remote repository"
-echo "Pushing changes to remote repo"
+log_message "Pushing changes to remote repository"
 git push -u origin master
 
-#log_message "Script execution completed"
-echo "Script execution completed"
+log_message "Script execution completed"

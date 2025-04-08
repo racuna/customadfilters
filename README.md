@@ -22,7 +22,7 @@ Advanced Settings -> Configure filter update -> add the url, name it (e.g Racuna
 
 https://raw.githubusercontent.com/racuna/customadfilters/master/customAdFilters.txt
 
-## BETA: GBA and mine Merged
+## GBA and mine Merged
 
 GBA Already have the "Steven Black", "Adaway", "Dan Pollock", "MalwareDomain List", "Peter Lowe" and even more host lists (check their sources). So you can disable every other list on DNS66 (the same with PersonalDNSFilter and maybe Blokada too) and add this instead:
 
@@ -36,6 +36,7 @@ If you want to say thanks or show support, go to: https://github.com/jerryn70/Go
 they do the real work here.
 
 - 2022-04-13, I also added 1hosts Lite filters
+- 2025-04-08, Added syntax for Adblock, uBlock, etc: https://raw.githubusercontent.com/racuna/customadfilters/refs/heads/master/adblock_rules.txt
 
 ### TO-DO:
 
