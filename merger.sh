@@ -150,7 +150,9 @@ git add "$LOG_FILE"
 git commit -m "Actualizacion de log de ejecución dia: $(date)"
 
 # Push changes
-log_message "Pushing changes to remote repository"
+#log_message "Pushing changes to remote repository"
+echo "Pushing changes to remote repo"
 git push -u origin master
 
-log_message "Script execution completed"
+#log_message "Script execution completed"
+echo "Script execution completed"
