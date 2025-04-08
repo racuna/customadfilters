@@ -4,9 +4,25 @@
 # v.1.2 remove blank lines of the whitelist + comments to the entire script
 # v.1.3 added error checking, logging and improved filtering
 # v.2 Claude fixes
+# v.3 Rutas absolutas y mejoras
+# v.4 Ruta base como parámetro
+
+# Obtener la ruta base como parámetro, si se proporciona
+if [ -n "$1" ]; then
+    BASE_DIR="$1"
+else
+    BASE_DIR=`pwd` # Ruta base por defecto
+fi
+
+# Verificar si la ruta base existe y es un directorio
+if [ ! -d "$BASE_DIR" ]; then
+    echo "ERROR: La ruta base '$BASE_DIR' no existe o no es un directorio."
+    exit 1
+fi
 
 # Setup logging
-LOG_FILE="merger_log.txt"
+LOG_FILE="$BASE_DIR/merger_log.txt"
+echo "*** Script execution started: $(date) ***" > "$LOG_FILE"
 echo "*** Script execution started: $(date) ***" > "$LOG_FILE"
 
 # Function to log messages
