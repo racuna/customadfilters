@@ -7,6 +7,7 @@
 # v.3 Rutas absolutas y mejoras
 # v.4 Ruta base como parámetro
 # v.4.1 no más log en el repo
+# v.4.2 añadida verificación de líneas
 
 # Obtener la ruta base como parámetro, si se proporciona
 if [ -n "$1" ]; then
@@ -24,7 +25,6 @@ fi
 # Setup logging
 LOG_FILE="$BASE_DIR/merger_log.txt"
 echo "*** Script execution started: $(date) ***" > "$LOG_FILE"
-echo "*** Script execution started: $(date) ***" > "$LOG_FILE"
 
 # Function to log messages
 log_message() {
@@ -39,6 +39,7 @@ check_file() {
         if [ "$size" -eq 0 ]; then
             log_message "WARNING: $1 is empty!"
         fi
+        echo "$size"
     else
         log_message "ERROR: File $1 does not exist!"
         return 1
@@ -49,10 +50,6 @@ check_file() {
 # Update local repo
 log_message "Pulling latest changes from git repository"
 git pull
-
-# Delete old filter list
-log_message "Removing old filter list file"
-rm -f GBAplusMine.txt
 
 # Remember current directory
 THISDIR=$(pwd)
@@ -113,45 +110,50 @@ log_message "Generating master filter list"
 cat GoodbyeAds* CoinMiner.txt customAdFilters.txt hosts.txt 2>/dev/null | grep -v -f wl2.txt | grep -v "^#" | sort | uniq -i > master_temp.txt
 check_file "master_temp.txt"
 
-# Copy result to final location
-cp master_temp.txt "$THISDIR/GBAplusMine.txt"
-log_message "Created GBAplusMine.txt in $THISDIR"
+# Verificar el número de líneas en master_temp.txt
+LINE_COUNT=$(wc -l < master_temp.txt)
+log_message "Generated filter list has $LINE_COUNT lines"
+
+# Solo actualizar si tiene más de 10 líneas
+if [ "$LINE_COUNT" -gt 10 ]; then
+    log_message "File has more than 10 lines, updating GBAplusMine.txt"
+    # Copy result to final location
+    cp master_temp.txt "$THISDIR/GBAplusMine.txt"
+    log_message "Created GBAplusMine.txt in $THISDIR"
+    
+    # Add results to the repo
+    log_message "Adding GBAplusMine.txt to git repo"
+    git -C "$THISDIR" add GBAplusMine.txt
+    
+    # Commit changes
+    commit_message="Actualizacion de GBAplusMine.txt dia: $(date)"
+    log_message "Committing changes: $commit_message"
+    git -C "$THISDIR" commit -m "$commit_message"
+    
+    # Generate Adblock syntax
+    log_message "Generating AdBlock rules format"
+    # Simplified grep to be less restrictive
+    grep "0.0.0.0" "$THISDIR/GBAplusMine.txt" | \
+      grep -v "::1\|127.0.0.1\|255.255.255.255\|fe80::\|ff00::\|ff02::\|^0.0.0.0 0.0.0.0$" | \
+      sed 's/^0\.0\.0\.0 /||/; s/$/.^/' > "$THISDIR/adblock_rules.txt"
+    
+    check_file "$THISDIR/adblock_rules.txt"
+    
+    # Add AdBlock rules to repo
+    log_message "Adding adblock_rules.txt to git repo"
+    git -C "$THISDIR" add adblock_rules.txt
+    git -C "$THISDIR" commit -m "Actualizacion de adblock_rules.txt dia: $(date)"
+    
+    # Push changes
+    log_message "Pushing changes to remote repository"
+    git -C "$THISDIR" push -u origin master
+else
+    log_message "File has 10 or fewer lines ($LINE_COUNT lines). No updates will be made to GBAplusMine.txt"
+fi
 
 # Delete temporary workspace
 cd "$THISDIR" || { log_message "Failed to return to original directory!"; exit 1; }
 rm -rf "$TMPDIR"
 log_message "Cleaned up temporary workspace"
-
-# Add results to the repo
-log_message "Adding GBAplusMine.txt to git repo"
-git add GBAplusMine.txt
-
-# Commit changes
-commit_message="Actualizacion de GBAplusMine.txt dia: $(date)"
-log_message "Committing changes: $commit_message"
-git commit -m "$commit_message"
-
-# Generate Adblock syntax
-log_message "Generating AdBlock rules format"
-# Simplified grep to be less restrictive
-grep "0.0.0.0" GBAplusMine.txt | \
-  grep -v "::1\|127.0.0.1\|255.255.255.255\|fe80::\|ff00::\|ff02::\|^0.0.0.0 0.0.0.0$" | \
-  sed 's/^0\.0\.0\.0 /||/; s/$/.^/' > adblock_rules.txt
-
-check_file "adblock_rules.txt"
-
-# Add AdBlock rules to repo
-log_message "Adding adblock_rules.txt to git repo"
-git add adblock_rules.txt
-git commit -m "Actualizacion de adblock_rules.txt dia: $(date)"
-
-# Añadir el archivo de log al repositorio
-# log_message "Añadiendo archivo de log al repositorio"
-# git add "$LOG_FILE"
-# git commit -m "Actualizacion de log de ejecución dia: $(date)"
-
-# Push changes
-log_message "Pushing changes to remote repository"
-git push -u origin master
 
 log_message "Script execution completed"
