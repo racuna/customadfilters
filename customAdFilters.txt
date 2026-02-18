@@ -78,3 +78,9 @@
 0.0.0.0 mytdsnet.com
 0.0.0.0 dheqzygafg.com
 0.0.0.0 go.reebr.com
+
+#Emol
+0.0.0.0 mediaserver.emol.cl/au_creatives_au_elements/elements
+0.0.0.0 cache-elastic-pandora.ecn.cl/*
+0.0.0.0 cache-elastic-etv.ecn.cl/*
+0.0.0.0 www.economicos.cl/widgets/widget_emol_2015.html
