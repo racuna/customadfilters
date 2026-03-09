@@ -84,3 +84,4 @@
 0.0.0.0 cache-elastic-pandora.ecn.cl/*
 0.0.0.0 cache-elastic-etv.ecn.cl/*
 0.0.0.0 www.economicos.cl/widgets/widget_emol_2015.html
+0.0.0.0 static.emol.cl/emol50/js/publicidadsetup
